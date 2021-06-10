@@ -27,7 +27,7 @@
     },
     mounted() {
       var _self = this
-
+      
       
       var scriptTag = document.createElement("script");
       scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js";
@@ -62,7 +62,7 @@
           (function() {
                   qr = new QRious({
                   element: document.getElementById('qr-code'),
-                  size: 100,
+                  size: 200,
                   value: _self.url
               });
           })();
@@ -71,7 +71,7 @@
           
           qr.set({
               foreground: 'black',
-              size: 100,
+              size: 200,
               value: qrtext
           });
           _self.codeGenerated = true
