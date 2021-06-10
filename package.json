@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "html2canvas": "^1.0.0-rc.7",
+    "qrcode": "^1.4.4",
     "qrious": "^4.0.2",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-weblineindia-qrcode": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -13,8 +13,9 @@
     <button style="margin-top:20px" v-show="codeGenerated" class="qr-btn" id="btn-download">Descargar código QR</button> 
   </div>
 </template>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 <script>
+
   export default {
     name: 'HelloWorld',
     'data': function() {
