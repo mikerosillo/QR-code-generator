@@ -28,6 +28,7 @@
     mounted() {
       var _self = this
       
+      
       var scriptTag = document.createElement("script");
       scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js";
       scriptTag.id = "my-datatable";
