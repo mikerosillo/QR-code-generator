@@ -27,7 +27,7 @@
     },
     mounted() {
       var _self = this
-      
+
       
       var scriptTag = document.createElement("script");
       scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js";
@@ -38,7 +38,7 @@
       document.getElementById('btn-download').addEventListener("click", function() {
         var canvas = document.querySelector('#qr-code');
 
-        var dataURL = canvas.toDataURL("image/jpeg", 1.0);
+        var dataURL = canvas.toDataURL("image/png");
 
         downloadImage(dataURL, 'qr-code.jpeg');
       });
@@ -62,7 +62,7 @@
           (function() {
                   qr = new QRious({
                   element: document.getElementById('qr-code'),
-                  size: 200,
+                  size: 100,
                   value: _self.url
               });
           })();
@@ -71,7 +71,7 @@
           
           qr.set({
               foreground: 'black',
-              size: 200,
+              size: 100,
               value: qrtext
           });
           _self.codeGenerated = true
