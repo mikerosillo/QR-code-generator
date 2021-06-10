@@ -38,7 +38,7 @@
       document.getElementById('btn-download').addEventListener("click", function() {
         var canvas = document.querySelector('#qr-code');
 
-        var dataURL = canvas.toDataURL("image/png");
+        var dataURL = canvas.toDataURL("image/jpeg", 1.0);
 
         downloadImage(dataURL, 'qr-code.jpeg');
       });
